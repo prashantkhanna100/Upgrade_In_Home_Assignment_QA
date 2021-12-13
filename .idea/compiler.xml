@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Upgrade_In_Home_Assignment_QA" target="1.5" />
+      <module name="Upgrade_In_Home_Assignment_QA" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
