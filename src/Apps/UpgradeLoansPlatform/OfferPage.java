@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 /**
  * This class contains locators and wrapper methods for all the user actions that can be done on Offer Page -> https://www.credify.tech/funnel/offer-page
  */
-public class OfferPage extends PageBase{
+public class OfferPage extends PageBase {
     // Variables
     private static WebDriver driver;
 
@@ -33,7 +33,7 @@ public class OfferPage extends PageBase{
     /**
      * Returns the Loan Amount Displayed on the Page
      */
-    public String getLoanAmount(){
+    public String getLoanAmount() {
         WebElement element = waitForElementToBeDisplayed(textLoanAmount); // This element was taking more time to load, that's why added explicit wait on this method only
         return element.getText();
     }
@@ -41,7 +41,7 @@ public class OfferPage extends PageBase{
     /**
      * Returns the Faster Payoff Default Monthly Payment Displayed on the Page
      */
-    public String getFasterPayoffDefaultMonthlyPayment(){
+    public String getFasterPayoffDefaultMonthlyPayment() {
         WebElement element = driver.findElement(textFasterPayoffDefaultMonthlyPayment);
         return element.getText();
     }
@@ -49,7 +49,7 @@ public class OfferPage extends PageBase{
     /**
      * Returns the Faster Payoff Default Term Displayed on the Page
      */
-    public String getFasterPayoffDefaultTerm(){
+    public String getFasterPayoffDefaultTerm() {
         WebElement element = driver.findElement(textFasterPayoffDefaultTerm);
         return element.getText();
     }
@@ -57,7 +57,7 @@ public class OfferPage extends PageBase{
     /**
      * Returns the Faster Payoff Default Interest Rate Displayed on the Page
      */
-    public String getFasterPayoffDefaultInterestRate(){
+    public String getFasterPayoffDefaultInterestRate() {
         WebElement element = driver.findElement(textFasterPayoffDefaultInterestRate);
         return element.getText();
     }
@@ -65,7 +65,7 @@ public class OfferPage extends PageBase{
     /**
      * Returns the Faster Payoff Default APR Displayed on the Page
      */
-    public String getFasterPayoffDefaultAPR(){
+    public String getFasterPayoffDefaultAPR() {
         WebElement element = driver.findElement(textFasterPayoffDefaultAPR);
         return element.getText();
     }
@@ -73,7 +73,7 @@ public class OfferPage extends PageBase{
     /**
      * Click Menu Option Button on top right corner of the page
      */
-    public void clickMenu(){
+    public void clickMenu() {
         WebElement element = driver.findElement(clickMenu);
         JavascriptExecutor js = (JavascriptExecutor) driver; // To scroll up on the page
         js.executeScript("arguments[0].scrollIntoView();", element);
@@ -83,7 +83,7 @@ public class OfferPage extends PageBase{
     /**
      * Click Sign Out Under Menu Option Button on top right corner of the page
      */
-    public void clickSignOut(){
+    public void clickSignOut() {
         WebElement element = driver.findElement(clickSignOut);
         element.click();
     }

@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 /**
  * This class contains locators and wrapper methods for all the user actions that can be done on Login Page -> https://www.credify.tech/portal/login
  */
-public class LoginPage extends PageBase{
+public class LoginPage extends PageBase {
     // Variables
     private static WebDriver driver;
 
@@ -28,7 +28,7 @@ public class LoginPage extends PageBase{
     /**
      * Enters email ID in the Email Address Field on the Page
      */
-    public void enterEmailAddress(String emailId){
+    public void enterEmailAddress(String emailId) {
         WebElement element = driver.findElement(inputEmailAddress);
         element.clear();
         element.sendKeys(emailId);
@@ -37,7 +37,7 @@ public class LoginPage extends PageBase{
     /**
      * Enters password in the Password Field on the Page
      */
-    public void enterPassword(String password){
+    public void enterPassword(String password) {
         WebElement element = driver.findElement(inputPassword);
         element.clear();
         element.sendKeys(password);
@@ -46,7 +46,7 @@ public class LoginPage extends PageBase{
     /**
      * Click Sign In Button
      */
-    public void clickSignIn(){
+    public void clickSignIn() {
         WebElement element = driver.findElement(clickSignIn);
         element.click();
     }

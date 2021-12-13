@@ -30,9 +30,10 @@ public class NonDMFFunnelPage extends PageBase {
 
     /**
      * Enters given Loan Amount in Loan Amount field
+     *
      * @param loanAmount
      */
-    public void enterLoanAmount(double loanAmount){
+    public void enterLoanAmount(double loanAmount) {
         WebElement element = driver.findElement(inputLoanAmount);
         element.clear();
         element.sendKeys(String.valueOf(loanAmount));
@@ -42,7 +43,7 @@ public class NonDMFFunnelPage extends PageBase {
     /**
      * Select Any Purpose from the dropdown list in Dropdown Field - Loan Purpose
      */
-    public void selectAnyLoanPurpose(){
+    public void selectAnyLoanPurpose() {
         // Getting list of dropdown options
         List<WebElement> listOfPurpose = driver.findElements(selectLoanPurpose);
         // Number of purposes available in dropdown
@@ -57,7 +58,7 @@ public class NonDMFFunnelPage extends PageBase {
     /**
      * Click Check Your Rate Button
      */
-    public void clickCheckYourRate(){
+    public void clickCheckYourRate() {
         WebElement element = driver.findElement(clickCheckYourRate);
         element.submit();
     }

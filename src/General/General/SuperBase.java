@@ -10,10 +10,11 @@ import java.util.Properties;
 /**
  * Common Methods for all Classes - Test, Page, Domain
  */
-public class SuperBase{
+public class SuperBase {
 
     /**
      * Method to return any data saved in Properties file
+     *
      * @param propertyName
      * @return
      */

@@ -2,7 +2,10 @@ package Java;
 
 import General.Helper;
 import General.TestBase;
-import UpgradeLoansPlatform.*;
+import UpgradeLoansPlatform.LoginDomain;
+import UpgradeLoansPlatform.NonDmfFunnelDomain;
+import UpgradeLoansPlatform.OfferDomain;
+import UpgradeLoansPlatform.PersonalInformationDomain;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -33,30 +36,30 @@ public class UITests extends TestBase {
 
     @Test
     // Test Description: Verify via the UI that as a loan borrower - you are seeing loan offers, upon filling the required form fields with valid inputs
-    public void test_1_loanBorrower(){
+    public void test_1_loanBorrower() {
 
         // Step1 and 2: Navigate to nonDmfFunnelPage and Enter loan amount as 2000, select any purpose. Click "Check your Rate"
         nonDmfFunnelDomain.checkRate(2000.0);
 
         // Step3: On the "Personal Information 1 Page - Step -Contact, enter First name, Last Name, Address, DOB and Click Continue
-        personalInformationDomain.addContactDetails("Test", "Singh", "10219 Southeast 270th Street", "Kent", "WA", "98030","01/01/1988", true);
+        personalInformationDomain.addContactDetails("Test", "Singh", "10219 Southeast 270th Street", "Kent", "WA", "98030", "01/01/1988", true);
 
         // Step4: On the "Personal Information 1 Page - Step - Income, enter Annual Income, Additional Income and Click Continue
-       personalInformationDomain.addIncomeDetails("130000","50000", true);
+        personalInformationDomain.addIncomeDetails("130000", "50000", true);
 
         // Step5: On the "Personal Information 1 Page - Step - Login, Enter Email, Password, Check Terms and Click Check Your Rate
         // Generate Random Number
         int randomNumber = Helper.generateRandomNumber(10000);
         String emailId = "candidate+" + randomNumber + "@upgrade-challenge.com";
         String password = "Test1234";
-        personalInformationDomain.addLoginDetails(emailId,password, true, true);
+        personalInformationDomain.addLoginDetails(emailId, password, true, true);
 
         //Step6: On the "Offer Page - Store the Loan Amount, Monthly Payment, Term, Interest Rate and APR from the default offer and then Sign Out
         HashMap<String, String> expectedResultsData = offerDomain.getFasterPayoffDefaultOfferDetails();
         offerDomain.signOut();
 
         //Step 7: Navigate to Login Page and Sign in
-        loginDomain.login(emailId,password);
+        loginDomain.login(emailId, password);
 
         //Step 8: Make sure if you are on Offer Page and Validate that Loan Amount, APR, Loan Term and Monthly Payment matches with the info submitted previously
         HashMap<String, String> actualResultsData = offerDomain.getFasterPayoffDefaultOfferDetails();
@@ -65,7 +68,7 @@ public class UITests extends TestBase {
         //Final Assertions
         Assert.assertEquals(currentUrl, getProperty("offerPageUrl"));
         Assert.assertEquals(expectedResultsData, actualResultsData);
-  }
+    }
 
     @AfterTest
     public void tearDown() {

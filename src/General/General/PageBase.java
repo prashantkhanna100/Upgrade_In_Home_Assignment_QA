@@ -13,9 +13,9 @@ import java.time.Duration;
  */
 public class PageBase extends SuperBase {
 
+    private static final int WEB_ELEMENT_WAIT_TIMEOUT_IN_SECONDS = 30;
     // Variables
     private static WebDriver driver;
-    private static final int WEB_ELEMENT_WAIT_TIMEOUT_IN_SECONDS = 30;
 
     public PageBase(WebDriver driver) {
         PageBase.driver = driver;
@@ -23,6 +23,7 @@ public class PageBase extends SuperBase {
 
     /**
      * This method can be used by any child Page class
+     *
      * @param by
      * @return WebElement
      */
@@ -34,6 +35,7 @@ public class PageBase extends SuperBase {
 
     /**
      * This method can be used by any child Page class
+     *
      * @param by
      * @return WebElement
      */

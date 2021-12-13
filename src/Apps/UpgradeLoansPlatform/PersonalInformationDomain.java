@@ -8,14 +8,14 @@ import org.openqa.selenium.WebDriver;
  * Most of the time, these three actions will be done together only, so i am adding a extra layer between Page Class and Test Class for Code Cleanliness in Test Class
  */
 public class PersonalInformationDomain extends DomainBase {
-    // Variables
-    private WebDriver driver;
     // Page Classes -> Every domain can use one or more Page Classes
     private static PersonalInformationPage personalInformationPage;
+    // Variables
+    private WebDriver driver;
 
 
     // Constructor
-    public PersonalInformationDomain(WebDriver driver){
+    public PersonalInformationDomain(WebDriver driver) {
         this.driver = driver;
         personalInformationPage = new PersonalInformationPage(this.driver);
     }
@@ -23,7 +23,7 @@ public class PersonalInformationDomain extends DomainBase {
     /**
      * This method with add the contact details on Personal Information Page 1
      */
-    public void addContactDetails(String firstName, String lastName, String street, String city, String state, String zipCode, String dob, boolean clickContinue){
+    public void addContactDetails(String firstName, String lastName, String street, String city, String state, String zipCode, String dob, boolean clickContinue) {
         personalInformationPage.enterFirstName(firstName);
         personalInformationPage.enterLastName(lastName);
         personalInformationPage.enterHomeAddress(street);
@@ -39,7 +39,7 @@ public class PersonalInformationDomain extends DomainBase {
     /**
      * This method with add the Income details on Personal Information Page 1
      */
-    public void addIncomeDetails(String annualIncome, String annualAdditionalIncome, boolean clickContinue){
+    public void addIncomeDetails(String annualIncome, String annualAdditionalIncome, boolean clickContinue) {
         personalInformationPage.enterAnnualIncome(annualIncome);
         personalInformationPage.enterAdditionalAnnualIncome(annualAdditionalIncome);
         if (clickContinue)
@@ -49,10 +49,10 @@ public class PersonalInformationDomain extends DomainBase {
     /**
      * This method with add the Login details on Personal Information Page 1
      */
-    public void addLoginDetails(String emailId, String password, boolean checkTerms, boolean clickCheckYourRate){
+    public void addLoginDetails(String emailId, String password, boolean checkTerms, boolean clickCheckYourRate) {
         personalInformationPage.enterEmailAddress(emailId);
         personalInformationPage.enterPassword(password);
-        if(checkTerms)
+        if (checkTerms)
             personalInformationPage.checkTermsOfConditions();
         if (clickCheckYourRate)
             personalInformationPage.clickCheckYourRate();
