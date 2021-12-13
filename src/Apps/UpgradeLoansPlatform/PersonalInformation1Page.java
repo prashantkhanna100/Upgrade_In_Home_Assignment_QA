@@ -1,5 +1,6 @@
 package UpgradeLoansPlatform;
 
+import General.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,7 +8,7 @@ import org.openqa.selenium.WebElement;
 /**
  * This class contains locators and wrapper methods for all the user actions that can be done on Personal Information 1 Page -> https://www.credify.tech/funnel/personal-information-1/LARGE_PURCHASE/20000?step=contact
  */
-public class PersonalInformation1Page {
+public class PersonalInformation1Page extends PageBase {
     // Variables
     private static WebDriver driver;
 
@@ -36,6 +37,7 @@ public class PersonalInformation1Page {
 
     // Constructor
     public PersonalInformation1Page(WebDriver driver) {
+        super(driver);
         this.driver = driver;
     }
 
@@ -44,7 +46,7 @@ public class PersonalInformation1Page {
      * Click Joint Application More Info Icon
      */
     public void clickJointAppMoreInfoIcon(){
-        WebElement element = driver.findElement(iconJointAppMoreInfo);
+        WebElement element = waitForElementToBeClickable(iconJointAppMoreInfo);
         element.click();
     }
 

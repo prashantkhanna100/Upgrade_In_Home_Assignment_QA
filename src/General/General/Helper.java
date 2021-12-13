@@ -3,7 +3,7 @@ package General;
 import java.util.Random;
 
 /**
- * This class will have some helper methods to avoid some of the duplicate code.
+ * This class will have some helper methods to avoid some duplicate code.
  */
 public class Helper {
 

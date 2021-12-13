@@ -1,6 +1,7 @@
 package UpgradeLoansPlatform;
 
 import General.Helper;
+import General.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,17 +10,18 @@ import java.util.List;
 /**
  * This class contains locators and wrapper methods for all the user actions that can be done on Non DMF Funnel Page -> https://www.credify.tech/funnel/nonDMFunnel
  */
-public class NonDMFFunnelPage {
+public class NonDMFFunnelPage extends PageBase {
     // Variables
     private static WebDriver driver;
 
     // Locators for this Page
     private static By inputLoanAmount = By.xpath("//*[contains(text(),'Loan Amount')]/parent::*//input[contains(@name,'desiredAmount')]");
     private static By selectLoanPurpose = By.xpath("//select[ contains ( @name ,'loan-purpose' ) ]//option[text() != '']");
-    private static By clickCheckYourRate = By.xpath(" //button[contains( text(), 'Check your rate') ] ");
+    private static By clickCheckYourRate = By.xpath("//button[contains( text(), 'Check your rate')]");
 
     // Constructor
     public NonDMFFunnelPage(WebDriver driver) {
+        super(driver);
         this.driver = driver;
     }
 
