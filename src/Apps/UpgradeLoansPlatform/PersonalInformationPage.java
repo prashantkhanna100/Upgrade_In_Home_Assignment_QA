@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 /**
  * This class contains locators and wrapper methods for all the user actions that can be done on Personal Information 1 Page -> https://www.credify.tech/funnel/personal-information-1/LARGE_PURCHASE/20000?step=contact
  */
-public class PersonalInformation1Page extends PageBase {
+public class PersonalInformationPage extends PageBase {
     // Variables
     private static WebDriver driver;
 
@@ -36,7 +36,7 @@ public class PersonalInformation1Page extends PageBase {
     private static By clickContinue = By.xpath("//button[contains( text(), 'Continue') ] ");
 
     // Constructor
-    public PersonalInformation1Page(WebDriver driver) {
+    public PersonalInformationPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
     }

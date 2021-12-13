@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * This class will have some helper methods to avoid some duplicate code.
  */
-public class Helper {
+public class Helper{
 
     /**
      * Method to generate Random Number

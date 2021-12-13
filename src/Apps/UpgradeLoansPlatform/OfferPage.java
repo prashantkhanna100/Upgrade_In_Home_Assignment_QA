@@ -2,11 +2,9 @@ package UpgradeLoansPlatform;
 
 import General.PageBase;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.JavascriptExecutor;
-
-import java.util.List;
 
 /**
  * This class contains locators and wrapper methods for all the user actions that can be done on Offer Page -> https://www.credify.tech/funnel/offer-page

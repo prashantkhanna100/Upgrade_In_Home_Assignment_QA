@@ -1,15 +1,17 @@
 package General;
-import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 /**
  * This class contains common methods for all the child Page classes to avoid duplicates
  */
-public class PageBase {
+public class PageBase extends SuperBase {
 
     // Variables
     private static WebDriver driver;
