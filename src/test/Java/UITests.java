@@ -1,9 +1,9 @@
 package Test.Java;
 
-import Apps.UpgradeLoansPlatform.LoginDomain;
-import Apps.UpgradeLoansPlatform.NonDmfFunnelDomain;
-import Apps.UpgradeLoansPlatform.OfferDomain;
-import Apps.UpgradeLoansPlatform.PersonalInformationDomain;
+import Applications.UpgradeLoansPlatform.Domains.LoginDomain;
+import Applications.UpgradeLoansPlatform.Domains.NonDmfFunnelDomain;
+import Applications.UpgradeLoansPlatform.Domains.OfferDomain;
+import Applications.UpgradeLoansPlatform.Domains.PersonalInformationDomain;
 import General.Helper;
 import General.TestBase;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package Apps.UpgradeLoansPlatform;
+package Applications.UpgradeLoansPlatform.Page;
 
 import General.Helper;
 import General.PageBase;
