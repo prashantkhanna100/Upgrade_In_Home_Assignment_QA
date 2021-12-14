@@ -1,4 +1,3 @@
-package Java;
 
 import General.Helper;
 import General.TestBase;
