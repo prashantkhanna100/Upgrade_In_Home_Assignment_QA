@@ -1,4 +1,4 @@
-package General.General;
+package General;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -19,7 +19,7 @@ public class SuperBase {
      * @return
      */
     public static String getProperty(String propertyName) {
-        final String propertyFilePath = "src/General/General/Framework.properties";
+        final String propertyFilePath = "src/General/Framework.properties";
         Properties properties;
         BufferedReader reader;
         try {

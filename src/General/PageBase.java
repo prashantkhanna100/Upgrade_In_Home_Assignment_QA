@@ -1,4 +1,4 @@
-package General.General;
+package General;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

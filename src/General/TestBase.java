@@ -1,4 +1,4 @@
-package General.General;
+package General;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
