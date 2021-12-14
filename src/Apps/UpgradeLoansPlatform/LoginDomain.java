@@ -1,6 +1,6 @@
-package UpgradeLoansPlatform;
+package Apps.UpgradeLoansPlatform;
 
-import General.DomainBase;
+import General.General.DomainBase;
 import org.openqa.selenium.WebDriver;
 
 /**

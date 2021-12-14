@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Tests">
-    <test name="UI Test">
+<suite name="All Test Cases">
+    <test name="UI Test Cases">
         <classes>
-            <class name="UITests"/>
+            <class name="Test.Java.UITests"/>
         </classes>
     </test>
 

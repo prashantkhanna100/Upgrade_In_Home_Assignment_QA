@@ -1,7 +1,7 @@
-package UpgradeLoansPlatform;
+package Apps.UpgradeLoansPlatform;
 
-import General.Helper;
-import General.PageBase;
+import General.General.Helper;
+import General.General.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

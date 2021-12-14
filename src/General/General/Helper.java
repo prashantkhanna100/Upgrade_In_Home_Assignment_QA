@@ -1,4 +1,4 @@
-package General;
+package General.General;
 
 import java.util.Random;
 

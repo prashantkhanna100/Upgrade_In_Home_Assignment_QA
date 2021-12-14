@@ -1,6 +1,6 @@
-package UpgradeLoansPlatform;
+package Apps.UpgradeLoansPlatform;
 
-import General.DomainBase;
+import General.General.DomainBase;
 import org.openqa.selenium.WebDriver;
 
 import java.util.HashMap;
@@ -28,7 +28,7 @@ public class OfferDomain extends DomainBase {
      * @return fasterPayoffDefaultOfferDetails
      */
     public HashMap<String, String> getFasterPayoffDefaultOfferDetails() {
-        HashMap<String, String> fasterPayoffDefaultOfferDetails = new HashMap<>();
+        HashMap<String, String> fasterPayoffDefaultOfferDetails = new HashMap<String, String>();
         fasterPayoffDefaultOfferDetails.put("Loan Amount", offerPage.getLoanAmount());
         fasterPayoffDefaultOfferDetails.put("Faster Payoff Default Monthly Payment", offerPage.getFasterPayoffDefaultMonthlyPayment());
         fasterPayoffDefaultOfferDetails.put("Faster Payoff Default Term", offerPage.getFasterPayoffDefaultTerm());

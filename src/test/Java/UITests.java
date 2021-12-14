@@ -1,9 +1,11 @@
-import General.Helper;
-import General.TestBase;
-import UpgradeLoansPlatform.LoginDomain;
-import UpgradeLoansPlatform.NonDmfFunnelDomain;
-import UpgradeLoansPlatform.OfferDomain;
-import UpgradeLoansPlatform.PersonalInformationDomain;
+package Test.Java;
+
+import Apps.UpgradeLoansPlatform.LoginDomain;
+import Apps.UpgradeLoansPlatform.NonDmfFunnelDomain;
+import Apps.UpgradeLoansPlatform.OfferDomain;
+import Apps.UpgradeLoansPlatform.PersonalInformationDomain;
+import General.General.Helper;
+import General.General.TestBase;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
