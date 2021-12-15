@@ -3,15 +3,12 @@
 <suite name="All Test Cases">
     <test name="UI Test Cases">
         <classes>
-            <class name="Test.Java.UITests"/>
+            <class name="Test.UpgradeLoans.UITests"/>
         </classes>
     </test>
-
-    <!--    <test name="Test Basics 2">-->
-    <!--        <parameter name="emailid" value="tester789@gmail.com"/>-->
-    <!--        <classes>-->
-    <!--            <class name="practiceTests.testOptional"/>-->
-    <!--        </classes>-->
-
-    <!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+    <test name="API Test Cases">
+        <classes>
+            <class name="Test.UpgradeLoans.APITests"/>
+        </classes>
+    </test>
 </suite>

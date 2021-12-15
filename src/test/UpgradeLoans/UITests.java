@@ -1,9 +1,9 @@
-package Test.Java;
+package Test.UpgradeLoans;
 
-import Applications.UpgradeLoansPlatform.Domains.LoginDomain;
-import Applications.UpgradeLoansPlatform.Domains.NonDmfFunnelDomain;
-import Applications.UpgradeLoansPlatform.Domains.OfferDomain;
-import Applications.UpgradeLoansPlatform.Domains.PersonalInformationDomain;
+import Applications.UpgradeLoans.UI.Domains.LoginDomain;
+import Applications.UpgradeLoans.UI.Domains.NonDmfFunnelDomain;
+import Applications.UpgradeLoans.UI.Domains.OfferDomain;
+import Applications.UpgradeLoans.UI.Domains.PersonalInformationDomain;
 import General.Helper;
 import General.TestBase;
 import org.openqa.selenium.WebDriver;
@@ -36,7 +36,7 @@ public class UITests extends TestBase {
 
     @Test
     // Test Description: Verify via the UI that as a loan borrower - you are seeing loan offers, upon filling the required form fields with valid inputs
-    public void test_1_loanBorrower() {
+    public void test1_loanBorrower() {
 
         // Step1 and 2: Navigate to nonDmfFunnelPage and Enter loan amount as 2000, select any purpose. Click "Check your Rate"
         nonDmfFunnelDomain.checkRate(2000.0);

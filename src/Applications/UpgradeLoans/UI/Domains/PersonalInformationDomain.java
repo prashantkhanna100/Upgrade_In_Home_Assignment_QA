@@ -1,6 +1,6 @@
-package Applications.UpgradeLoansPlatform.Domains;
+package Applications.UpgradeLoans.UI.Domains;
 
-import Applications.UpgradeLoansPlatform.Page.PersonalInformationPage;
+import Applications.UpgradeLoans.UI.Page.PersonalInformationPage;
 import General.DomainBase;
 import org.openqa.selenium.WebDriver;
 
